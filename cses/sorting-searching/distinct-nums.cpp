@@ -2,13 +2,20 @@
 using namespace std;
 
 typedef long long ll;
-typedef vector<int> vi;
-typedef vector<ll> vll;
-
-#define PB push_back
 
 void solve() {
+  ll n;
+  cin >> n;
 
+  set<ll> s;
+
+  for (ll i = 0; i < n; ++i) {
+    ll num;
+    cin >> num;
+    s.insert(num);
+  }
+
+  cout << s.size() << "\n";
 }
 
 int main() {
@@ -16,8 +23,6 @@ int main() {
   cin.tie(nullptr);
 
   solve();
-  
-  return 0;
-}
 
-// int total_sum = (n * (n + 1)) / 2;
+  return 0; 
+}
