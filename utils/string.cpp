@@ -16,3 +16,5 @@ bool isuppercase(char ch) {
 bool islowercase(char ch) {
   return islower(ch);
 }
+
+// reverse(str.begin(), str.end());
