@@ -17,4 +17,6 @@ bool islowercase(char ch) {
   return islower(ch);
 }
 
-// reverse(str.begin(), str.end());
+// reverse(str.begin(), str.end()); Reverse the string
+
+// swap(str[i], str[i + 1]); Swap the chars of the string
