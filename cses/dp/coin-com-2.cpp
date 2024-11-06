@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const long long MOD = 1e9 + 7;
+
+void solve() {
+  int n, x;
+  cin >> n >> x;
+
+  vector<int> coins(n);
+  for (int i = 0; i < n; i++) cin >> coins[i];
+
+  vector<int> dp(x + 1, 0);
+  dp[0] = 1;
+
+  for (int coin : coins) {
+    for (int i = coin; i <= x; i++) {
+      dp[i] += dp[i - coin];
+      dp[i] %= MOD;
+    }
+  }
+
+  cout << dp[x] << "\n";
+}
+
+int main() {
+  ios::sync_with_stdio(0);
+  cin.tie(nullptr);
+
+  solve();
+  
+  return 0;
+}
