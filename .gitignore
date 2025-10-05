@@ -1,1 +1,17 @@
 **/*.exe
+
+# Compiled binaries
+*.out
+*.o
+*.so
+*.a
+*.exe
+
+# C++ specific
+*.obj
+*.dll
+
+# Build folders
+/build/
+/bin/
+/dist/
